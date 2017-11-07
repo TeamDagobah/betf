@@ -18,6 +18,7 @@ module.exports = function(app) {
 
   app.put('/games/:id', game.updateGame)
   app.get('games/:id', game.getAGame)
+ 
   app.delete('/games/:id', game.deleteGame)
 
   // routes algorithms: 

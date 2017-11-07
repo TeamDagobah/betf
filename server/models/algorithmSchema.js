@@ -5,17 +5,10 @@ var db = require('../server.js')
 var Schema = mongoose.Schema;
 
 var algorithmSchema = new Schema({
-  _id : {
-    type: String,  
-  }, 
 
   prompt: {
     type: String, 
   }, 
-
-  summary: {
-    type: String, 
-  },
 
   pointValue: {
     type: Number, 
