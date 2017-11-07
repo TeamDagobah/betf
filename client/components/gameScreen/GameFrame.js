@@ -38,6 +38,7 @@ export class GameFrame extends React.Component {
 	render(props){
 		return (
 			<div>
+				<Timer />
 				<Prompt promptdetails={this.state.prompt} />
 				<CodeEntryForm />
 				<SubmitButton />

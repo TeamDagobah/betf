@@ -1,11 +1,23 @@
 import React from 'react';
 
 class Lander extends Component {
+    constructor(props) {
+        super(props);
+
+    }
+    
     render(){
         return(
-            <h3>
-            Lander
-            </h3>
+            <div>
+                <form>
+                    Username:<br/>
+                    <input type="text" name="firstname"/>
+                    Password:<br/>
+                    <input type="text" name="lastname"/>
+                    <br/>
+                    <button onClick="">Submit</button>
+                </form>
+            </div>
         )
     }
 }
