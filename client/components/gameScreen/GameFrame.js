@@ -7,6 +7,7 @@ import React from 'react';
 import axios from 'axios';
 // import Timer from './Timer.js'; // this needs a file. 
 import Prompt from './Prompt.js'; 
+import Timer from './Timer.js'; 
 import CodeEntryForm from './CodeEntryForm.js'
 // import Tests from './Tests' // this needs a file
 // import Xonsole from './Xonsole' // because 'Console' isn't a reserved word but it should be.
@@ -97,7 +98,10 @@ export class GameFrame extends React.Component {
 			
 		return (
 			<div className="stack">
-				<div> This is where all of the components will go. 
+				<h1>
+					<Timer/>
+				</h1>
+				<div>
 					<Prompt promptdetails={this.state.prompt} />
 					<CodeEntryForm seedCode = {this.state.seedCode} test={this.state.tests} /> 
 				</div> 
