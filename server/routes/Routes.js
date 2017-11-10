@@ -2,6 +2,7 @@
 module.exports = function(app) {
   var user = require('../controllers/userController.js');
   var game = require('../controllers/gameController.js');
+  var test = require('../controllers/testController.js');
   var algorithms = require('../controllers/algorithmController.js');
 
   //routes for signing in
@@ -39,4 +40,8 @@ module.exports = function(app) {
 
   app.put('/algos/:id', algorithms.updateSubmissionHistory)
   app.delete('/algos/:id', algorithms.deleteAlgorithm)
+
+
+  //routes to perform tests of evaluated code
+  app.post('/test', test.getSubmissionEvaluation)
 };
